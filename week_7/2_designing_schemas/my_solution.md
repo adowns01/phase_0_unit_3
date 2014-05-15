@@ -1,7 +1,7 @@
 # U3.W7: Designing Schemas
 
 
-#### I worked on this challenge [by myself, with: ]
+#### I worked on this challenge by myself.
 
 
 ## Release 0: Student Roster Schema
@@ -27,6 +27,13 @@ https://github.com/adowns01/phase_0_unit_3/blob/master/week_7/imgs/Many%20to%20M
 Description of what you're modeling: 
 
 <!-- display your one-to-one image inline here -->
+Every country only has one capital city and every capital city only has one country. (The only exception 
+I know of is South Africa, which has three capitals, one for each branch of government.) Thus it is a one-to-one relationship.
+https://github.com/adowns01/phase_0_unit_3/blob/master/week_7/imgs/my_one_to_one_schema.png
 <!-- display your many-to-many image inline here -->
+
+Students typically take many classes at once (and thus have many teachers) and teachers have multiple students 
+at one time. Thus the student to teacher relationship is many-to-many.
+https://github.com/adowns01/phase_0_unit_3/blob/master/week_7/imgs/my_many_to_many_schema.png
 
 ## Release 5: Reflection

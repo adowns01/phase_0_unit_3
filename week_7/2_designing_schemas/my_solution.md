@@ -37,3 +37,12 @@ at one time. Thus the student to teacher relationship is many-to-many.
 https://github.com/adowns01/phase_0_unit_3/blob/master/week_7/imgs/my_many_to_many_schema.png
 
 ## Release 5: Reflection
+
+# I'm supposed to be honest, right? I found this challenge all at once dull, tedious, and frustraiting. Partially 
+# I just don't understand the whole point? It's nice seeing things visually, but is there a way to turn it directly 
+# into SQLite? My guess is that there is and I'm missing it... 
+
+# I'm looking forward to a time where I will be with teachers and peers where I can ask these questions and get a 
+# quick answer. 
+
+

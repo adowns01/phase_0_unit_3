@@ -61,3 +61,7 @@ WHERE id = 555
 
 ## Release 5: Reflection
 <!-- Be sure to add your reflection here!!! -->
+
+Join is so confusing! I've looked at a ton of resources and I still need serious help. I hope the GPS for this week isn't on this or else I'm going to be very embarassed and will need to lean on my partner more than I care to. 
+
+Like I said before, I'm looking forward to being there in person where I can learn face to face. 

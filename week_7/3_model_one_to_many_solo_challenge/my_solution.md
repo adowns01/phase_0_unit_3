@@ -2,16 +2,16 @@
 
 ## Release 0: Users Fields
 <!-- Identify the fields Twitter collects data for -->
-# name, location, website, bio
+the user fields are: name, location, website, bio
 
 ## Release 1: Tweet Fields
 <!-- Identify the fields Twitter uses to represent/display a tweet. What are you required or allowed to enter? -->
-# text (up to 140 characters), photo (optional), location(optional)
+fields: text (up to 140 characters), photo (optional), location(optional), date/time (automatic) 
 
 ## Release 2: Explain the relationship
 # The relationship between `users` and `tweets` is: one-to-many
 <!-- because... -->
-# It is one to many because *one* person can send *many* tweets, but each tweet is only sent by *one* person.
+It is one to many because *one* person can send *many* tweets, but each tweet is only sent by *one* person.
 
 ## Release 3: Schema Design
 <!-- Include your image (inline) of your schema -->

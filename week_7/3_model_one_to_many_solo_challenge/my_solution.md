@@ -9,7 +9,7 @@ the user fields are: name, location, website, bio
 fields: text (up to 140 characters), photo (optional), location(optional), date/time (automatic) 
 
 ## Release 2: Explain the relationship
-# The relationship between `users` and `tweets` is: one-to-many
+The relationship between `users` and `tweets` is: one-to-many
 <!-- because... -->
 It is one to many because *one* person can send *many* tweets, but each tweet is only sent by *one* person.
 

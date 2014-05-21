@@ -1,6 +1,8 @@
 // U3.W8-9: Gradebook from Names and Scores
 
-// I worked on this challenge [by myself, with:]
+// I worked on this challenge with: 
+// 1. Amelia Downs
+// 2. Britney Van Valkenburg
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -45,7 +47,7 @@ of the respective office in voteCount.  After Alex's votes have been tallied,
 voteCount would be ...
 
   var voteCount = {
-    president: { Bob: 1 },
+    president: { "Bob": 1 },
     vicePresident: { Devin: 1 },
     secretary: { Gail: 1 },
     treasurer: { Kerry: 1 }
@@ -65,18 +67,110 @@ var officers = {
 
 // Pseudocode
 
+// Iterate through votes read who they voted for for prez, add that name
+// to prez dictionary if it isn't already there. If it is incriment vote count
+// by one.
+// Iterate through votes read who they voted for for viceprez, add that name
+// to viceprez dictionary if it isn't already there. If it is incriment vote count
+// by one.
+// Iterate through votes read who they voted for for secretary, add that name
+// to secretary dictionary if it isn't already there. If it is incriment vote count
+// by one.
+// Iterate through votes read who they voted for for treasurer, add that name
+// to treasurer dictionary if it isn't already there. If it is incriment vote count
+// by one.
+
+// For each office, go through the list and find out who has the most votes. 
+// Assign that person to office.
+
 
 // __________________________________________
 // Initial Solution
 
 
+// for (var vote in votes){
 
+//   if (votes[vote].president in voteCount.president){
+//     voteCount.president[votes[vote].president] += 1;
+//   }
+//   else{
+//     voteCount.president[votes[vote].president] = 1;
+//   }
+//   //////////////////////////////VP
+  
+//     if (votes[vote].vicePresident in voteCount.vicePresident){
+//     voteCount.vicePresident[votes[vote].vicePresident] += 1;
+//   }
+//   else{
+//     voteCount.vicePresident[votes[vote].vicePresident] = 1;
+//   }
+//   ///////////////////////////////SECRETARY
+  
+//   if (votes[vote].secretary in voteCount.secretary){
+//     voteCount.secretary[votes[vote].secretary] += 1;
+//   }
+//   else{
+//     voteCount.secretary[votes[vote].secretary] = 1;
+//   }
+  
+//   /////////////////////Treasurer
+  
+//   if (votes[vote].treasurer in voteCount.treasurer){
+//     voteCount.treasurer[votes[vote].treasurer] += 1;
+//   }
+//   else{
+//     voteCount.treasurer[votes[vote].treasurer] = 1;
+//   }
+  
+// };
 
+// var max = 0;
+// var president = "";
+// for (var nominated in voteCount.president) {
+//   // console.log(voteCount.president)
+//   if (voteCount.president[nominated] > max) {
+//     max = voteCount.president[nominated];
+//     president = nominated;
+//   }
+// }
+// officers.president = president;
+
+// stopped here and refactored...
 
 
 
 // __________________________________________
 // Refactored Solution
+
+// Go through each position (prez, vp, sec, treasury)
+for(position in officers){
+
+// tally the votes for that position
+  for (var vote in votes){
+    // if the person has already been voted for, add 1 to their total votes
+    if (votes[vote][position] in voteCount[position]){
+      voteCount[position][votes[vote][position]] += 1;
+    }
+    // if the person has not been voted for, add them to vote count
+    // with one vote
+    else{
+      voteCount[position][votes[vote][position]] = 1;
+    }
+  }
+
+  var max = 0;
+  var post = "";
+
+  // Go through the total votes for the position
+  for (var nominated in voteCount[position]) {
+    if (voteCount[position][nominated] > max) {
+      max = voteCount[position][nominated];
+      post = nominated;
+    }
+  }
+  // assign the person with the most votes the post
+  officers[position] = post;
+}
 
 
 
@@ -86,9 +180,15 @@ var officers = {
 // __________________________________________
 // Reflection
 
+// I had a great time pairing with Britney for this challenge. I didn't have
+// near as many problems adjusting to JS syntax as I did yesterday. Also, 
+// I wasn't aware of the for...in syntax which wouldve been great (I think)
+// for the last js challenge I did. 
 
+// I think the one thing I need to focus on the most is when to use 
+// hard brakets and when to use a dot when trying to access items in an obj
 
-
+// I'm getting more and more excited every day!
 
 
 // __________________________________________

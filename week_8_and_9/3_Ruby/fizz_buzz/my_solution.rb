@@ -7,12 +7,12 @@
 
 # Go through each element in the array 
 # first check if it is divisibe by 3 
-	# yes: check if it is divisible by 15 
-			# yes: replace with "FizzBuzz"
-			# no: replace with "Fizz"
-	# no: check if divisible by 5
-		# yes: replace with "Buzz"
-		# no: leave the element a lone. 
+# 	yes: check if it is divisible by 15 
+# 			yes: replace with "FizzBuzz"
+# 			no: replace with "Fizz"
+# 	no: check if divisible by 5
+# 		yes: replace with "Buzz"
+# 		no: leave the element a lone. 
 
 
 # 3. Initial Solution

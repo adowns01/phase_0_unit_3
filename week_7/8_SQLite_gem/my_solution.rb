@@ -90,13 +90,4 @@ print_state_reps("NJ", "NY", "ME", "FL", "AK")
 # If you're having trouble, find someone to pair on this explanation with you.
 
 # MY REFLECTION
-# I had a great time on this challenge. This was my favorite challenge with SQLite. Though I think that has a lot to do
-# with my awesome pairing partner Bridgette. This is the 2nd time we've paired and it was even more awesome than before. 
-
-# I really enjoyed seeing how ruby and SQL intereacted. Before I didn't understand how it could be useful on a large scale.
-# But now it make more sense. 
-
-# We didn't make it to the bonus section of the bonus challenge, which is a shame becasue I really need help with JOIN. 
-
-
 

@@ -90,8 +90,7 @@ I couldn't figure out a way to un-consolidate the HTML code in sublime, so I use
 http://www.textfixer.com/html/uncompress-html-code.php
 which worked very well. I'm glad I found it becasue there is no way I was going through by hand!
 
-What I found most interesting in this challenge was seeing how a dynamic website worked and how the JS interacted with 
-the HTML/CSS. For example this piece in the CSS
+What I found most interesting in this challenge was seeing how a dynamic website worked aFor example this piece in the CSS
 ```bash
 input[type=\"submit\"] { font-family:Verdana; }
 ```

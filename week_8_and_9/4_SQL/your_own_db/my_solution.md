@@ -1,6 +1,9 @@
 <!-- ## Show the terminal output here.  -->
 
-input: .schema
+input:
+```bash 
+.schema
+```
 output:
 ```bash
 --CREATE TABLE appointments (
@@ -22,12 +25,18 @@ output:
 --  updated_at DATETIME NOT NULL
 --);
 ```
-input: SELECT * FROM patients JOIN appointments ON patients.id = appointments.patient_id;
+input:
+```bash
+SELECT * FROM patients JOIN appointments ON patients.id = appointments.patient_id;
+```
 output: there was no output because there are no values in either table
 
 
 After we added our values...
-input: SELECT * FROM patients;
+input: 
+```bash
+SELECT * FROM patients;
+```
 
 output: 
 ```bash

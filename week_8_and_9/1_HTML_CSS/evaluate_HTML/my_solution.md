@@ -4,9 +4,11 @@
 it does not?  Provide examples of the "bad" code.
 
 Everything seems to be a span. For example, there are a lot of code that has class = "comhead" with only one little bit of text in it. 
-
+bash 
+```bash 
 <span class="comhead"> (usabilitypost.com) 
 </span>
+```
 
 Instead they could've used syntactic tags and created a <comhead></comhead> tag.
 But everything does seem to have logical names, which make it easy to follow.
@@ -29,8 +31,10 @@ separate it into a CSS file? Or did they do both?  Again, include examples.
 I was very surprised to see how small the CSS file was. Though it is a basic website, I was just surprised after seeing the length of the html. 
 
 They used CSS inline and included a CSS document as well. The major stuff seems to be in the CSS document. The CSS added in the html seems to be for spacing reasons. For example: 
+```bash 
 <tr style="height:5px">
 </tr>
+```
 
 That code is repeated 30 times in the html document. If instead they created a class for it then they wouldn't have had to write out so much code each time. 
 
@@ -39,15 +43,16 @@ That code is repeated 30 times in the html document. If instead they created a c
 If so, what?
 
 I haven't used tables in HTML since the pre phase 0 prep, so I had forgotten a lot of those related tags. For example: 
-
+```bash 
 <tr></tr>is a table row 
 <th></th> is a table heading
+```
 
 5) How did the authors organize the CSS file? Was it DRY?
 
 Like I said earlier, the css file is actually very short and easy to read compared to the html, though not completely dry. 
 The most obvious non-DRY aspect is the font-family. All of the font on the page (except for two) are Verdana. So instead of defining it for each object, they couldn've set them all to Verdana, and then had exceptions for the other two. Here are the lines I am talking about:
-
+```bash 
 .admin td   { font-family:Verdana; font-size:8.5pt; color:#000000; }
 .subtext td { font-family:Verdana; font-size:  7pt; color:#828282; }
 
@@ -65,7 +70,7 @@ textarea { font-family:Courier; font-size:10pt; color:#000000; }
 .comhead { font-family:Verdana; font-size:  8pt; color:#828282; }
 .comment { font-family:Verdana; font-size:  9pt; }
 .dead    { font-family:Verdana; font-size:  9pt; color:#dddddd; }
-
+```
 
 
 6) Did the authors incorporate any responsive design into the site?

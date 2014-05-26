@@ -80,5 +80,21 @@ The site is reponsive. When you make it smaller/larger the content area decrease
 7) What are your overall thoughts on the HTML/CSS from this website based on 
 what you've read?
 
+
 I personally think that it is a super ugly website. Even though the coding isn't the DRYist it is easy to understand.
+
+
+## REFLECTION
+
+I couldn't figure out a way to un-consolidate the HTML code in sublime, so I used this resource: 
+http://www.textfixer.com/html/uncompress-html-code.php
+which worked very well. I'm glad I found it becasue there is no way I was going through by hand!
+
+What I found most interesting in this challenge was seeing how a dynamic website worked and how the JS interacted with 
+the HTML/CSS. For example this piece in the CSS
+```bash
+input[type=\"submit\"] { font-family:Verdana; }
+```
+
+I also find it interesting that these are the only two languages where no one comments anything. 
 
